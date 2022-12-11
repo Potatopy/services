@@ -344,4 +344,15 @@ async def help(ctx):
         embed.add_field(name=f',{command.name}{command.signature if command.signature is not None else ""}', value=description)
     await ctx.send(embed=embed)
 
+@bot.command()
+async def crypto(ctx):
+    em = nextcord.Embed(
+        title="Crypto Wallets",
+        description="My crypto wallets (if the crypto is not listed, tell me and i will see id i can accept it)",
+    )
+    em.add_field(name="Bitcoin", value="bc1qpk407aahx69frvaxzq2wmp968utj654767kn0h")
+    em.add_field(name="Ethereum", value="0x82A99144149373f96710Dd24be9e6C233264D616")
+    em.add_field(name="Litecoin", value="LNJ91UYHxBj6ciBuMPWfsk3BUqePPWMtQz")
+    await ctx.send(embed=em)
+
 bot.run(TOKEN)
