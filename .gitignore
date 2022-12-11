@@ -1,0 +1,7 @@
+# --Enviroment--
+venv
+.env
+
+# --PyCharm / VSCode--
+.idea
+.vscode
