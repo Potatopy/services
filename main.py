@@ -3,7 +3,6 @@ import nextcord
 import asyncio
 import aiosqlite
 import time as pyTime
-import humanfriendly
 import random
 from dotenv import load_dotenv
 import os
